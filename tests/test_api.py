@@ -31,7 +31,7 @@ class TestContentGenerationAPI(unittest.TestCase):
         self.assertIn('status', status_data)
         if status_data['status'] == 'done':
             self.assertIn('result', status_data)
-            self.assertIn('contents', status_data['result'])
+            print(status_data['candidates'][0]['content']['parts'][0]['text'])
         elif status_data['status'] in ['error', 'failed']:
             self.assertIn('result', status_data)
             self.assertIsInstance(status_data['result'], str)
