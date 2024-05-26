@@ -1,1 +1,1 @@
-# lllm-product-name
+# LLM Product Name Generator
